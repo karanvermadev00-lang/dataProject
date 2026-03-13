@@ -1,0 +1,31 @@
+[2026-03-12T17:30:56.050+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: herbarium_etl_dag.run_etl manual__2026-03-12T17:30:52.876591+00:00 [queued]>
+[2026-03-12T17:30:56.077+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: herbarium_etl_dag.run_etl manual__2026-03-12T17:30:52.876591+00:00 [queued]>
+[2026-03-12T17:30:56.079+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-03-12T17:30:56.132+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): run_etl> on 2026-03-12 17:30:52.876591+00:00
+[2026-03-12T17:30:56.150+0000] {standard_task_runner.py:60} INFO - Started process 222 to run task
+[2026-03-12T17:30:56.162+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'herbarium_etl_dag', 'run_etl', 'manual__2026-03-12T17:30:52.876591+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/herbarium_etl_dag.py', '--cfg-path', '/tmp/tmpy0fh3phz']
+[2026-03-12T17:30:56.169+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask run_etl
+[2026-03-12T17:30:57.036+0000] {task_command.py:423} INFO - Running <TaskInstance: herbarium_etl_dag.run_etl manual__2026-03-12T17:30:52.876591+00:00 [running]> on host 52a8e2048a23
+[2026-03-12T17:30:58.198+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='herbarium_etl_dag' AIRFLOW_CTX_TASK_ID='run_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-03-12T17:30:52.876591+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-12T17:30:52.876591+00:00'
+[2026-03-12T17:30:58.457+0000] {base.py:83} INFO - Using connection ID 'postgres_default' for task execution.
+[2026-03-12T17:30:58.506+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/herbarium_etl_dag.py", line 25, in etl_process
+    conn = hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 158, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "postgres" (172.18.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[2026-03-12T17:30:58.839+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=herbarium_etl_dag, task_id=run_etl, execution_date=20260312T173052, start_date=20260312T173056, end_date=20260312T173058
+[2026-03-12T17:30:58.961+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 30 for task run_etl (connection to server at "postgres" (172.18.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+; 222)
+[2026-03-12T17:30:59.027+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-12T17:30:59.262+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
