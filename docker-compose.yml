@@ -1,4 +1,4 @@
-version: "3.8"
+
 
 services:
 
@@ -25,12 +25,13 @@ services:
       - postgres
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__SECRET_KEY: airflow_secret
       AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-postgres
     command: >
       bash -c "
-      airflow db init &&
+      airflow db migrate &&
       airflow users create
       --username admin
       --password admin
@@ -57,8 +58,9 @@ services:
       - airflow-init
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__SECRET_KEY: airflow_secret
       AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-postgres
     ports:
       - "8080:8080"
@@ -81,8 +83,9 @@ services:
       - airflow-init
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__SECRET_KEY: airflow_secret
       AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-postgres
     command: scheduler
     networks:

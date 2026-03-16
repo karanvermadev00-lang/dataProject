@@ -1,0 +1,442 @@
+[2026-03-16T16:59:51.507+0000] {processor.py:161} INFO - Started process (PID=43) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T16:59:51.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T16:59:51.516+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.515+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T16:59:51.700+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T16:59:51.935+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.934+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:herbarium_etl_dag
+[2026-03-16T16:59:51.955+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.954+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:herbarium_etl_dag
+[2026-03-16T16:59:51.976+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.975+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:herbarium_etl_dag
+[2026-03-16T16:59:51.977+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.977+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T16:59:51.992+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.992+0000] {dag.py:3058} INFO - Creating ORM DAG for herbarium_etl_dag
+[2026-03-16T16:59:51.993+0000] {logging_mixin.py:188} INFO - [2026-03-16T16:59:51.993+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T16:59:52.022+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.519 seconds
+[2026-03-16T17:00:22.454+0000] {processor.py:161} INFO - Started process (PID=44) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:00:22.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:00:22.460+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:00:22.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:00:22.496+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:00:22.545+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:00:22.545+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:00:22.569+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:00:22.568+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:00:22.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.169 seconds
+[2026-03-16T17:00:52.760+0000] {processor.py:161} INFO - Started process (PID=45) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:00:52.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:00:52.764+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:00:52.763+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:00:52.793+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:00:52.820+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:00:52.819+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:00:52.833+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:00:52.833+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:00:52.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.104 seconds
+[2026-03-16T17:01:23.128+0000] {processor.py:161} INFO - Started process (PID=46) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:01:23.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:01:23.133+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:01:23.132+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:01:23.171+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:01:23.212+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:01:23.212+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:01:23.235+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:01:23.235+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:01:23.281+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.161 seconds
+[2026-03-16T17:01:53.517+0000] {processor.py:161} INFO - Started process (PID=47) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:01:53.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:01:53.524+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:01:53.523+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:01:53.580+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:01:53.619+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:01:53.619+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:01:53.636+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:01:53.636+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:01:53.674+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.164 seconds
+[2026-03-16T17:02:28.573+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:02:28.575+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:02:28.578+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:28.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:02:28.618+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:02:29.038+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:29.037+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:herbarium_etl_dag
+[2026-03-16T17:02:29.049+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:29.049+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:herbarium_etl_dag
+[2026-03-16T17:02:29.061+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:29.060+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:herbarium_etl_dag
+[2026-03-16T17:02:29.062+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:29.062+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:02:29.090+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:29.089+0000] {dag.py:3058} INFO - Creating ORM DAG for herbarium_etl_dag
+[2026-03-16T17:02:29.091+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:29.091+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:02:29.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.570 seconds
+[2026-03-16T17:02:59.466+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:02:59.470+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:02:59.474+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:59.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:02:59.529+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:02:59.767+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:59.766+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:02:59.817+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:02:59.817+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:02:59.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.431 seconds
+[2026-03-16T17:03:30.123+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:03:30.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:03:30.131+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:03:30.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:03:30.179+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:03:30.360+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:03:30.360+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:03:30.407+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:03:30.406+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:03:30.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.440 seconds
+[2026-03-16T17:04:00.874+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:04:00.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:04:00.879+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:04:00.878+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:04:00.917+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:04:01.163+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:04:01.163+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:04:01.207+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:04:01.207+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:04:01.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.422 seconds
+[2026-03-16T17:04:31.585+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:04:31.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:04:31.591+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:04:31.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:04:31.635+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:04:31.841+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:04:31.840+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:04:31.863+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:04:31.863+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:04:31.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.335 seconds
+[2026-03-16T17:05:02.264+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:05:02.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:05:02.268+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:05:02.268+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:05:02.309+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:05:02.583+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:05:02.582+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:05:02.682+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:05:02.681+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:05:02.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.558 seconds
+[2026-03-16T17:05:33.669+0000] {processor.py:161} INFO - Started process (PID=207) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:05:33.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:05:33.674+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:05:33.673+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:05:33.718+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:05:33.935+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:05:33.934+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:05:33.967+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:05:33.967+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:05:34.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.371 seconds
+[2026-03-16T17:06:04.390+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:06:04.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:06:04.395+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:06:04.394+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:06:04.437+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:06:04.640+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:06:04.639+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:06:04.670+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:06:04.669+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:06:04.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.361 seconds
+[2026-03-16T17:06:35.392+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:06:35.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:06:35.396+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:06:35.395+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:06:35.433+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:06:35.605+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:06:35.605+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:06:35.642+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:06:35.642+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:06:35.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.314 seconds
+[2026-03-16T17:07:06.062+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:07:06.065+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:07:06.066+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:07:06.066+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:07:06.125+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:07:06.377+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:07:06.376+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:07:06.402+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:07:06.402+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:07:06.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.404 seconds
+[2026-03-16T17:07:36.907+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:07:36.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:07:36.911+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:07:36.910+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:07:36.951+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:07:37.147+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:07:37.147+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:07:37.175+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:07:37.174+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:07:37.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.336 seconds
+[2026-03-16T17:08:07.598+0000] {processor.py:161} INFO - Started process (PID=232) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:08:07.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:08:07.603+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:08:07.603+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:08:07.662+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:08:08.012+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:08:08.012+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:08:08.049+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:08:08.048+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:08:08.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.535 seconds
+[2026-03-16T17:08:38.503+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:08:38.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:08:38.507+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:08:38.507+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:08:38.552+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:08:38.839+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:08:38.839+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:08:38.873+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:08:38.873+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:08:38.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.432 seconds
+[2026-03-16T17:09:09.186+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:09:09.188+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:09:09.191+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:09:09.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:09:09.232+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:09:09.492+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:09:09.492+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:09:09.519+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:09:09.519+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:09:09.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.398 seconds
+[2026-03-16T17:09:39.929+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:09:39.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:09:39.933+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:09:39.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:09:39.994+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:09:40.286+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:09:40.286+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:09:40.313+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:09:40.313+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:09:40.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.450 seconds
+[2026-03-16T17:10:10.729+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:10:10.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:10:10.733+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:10:10.733+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:10:10.767+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:10:10.949+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:10:10.948+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:10:10.977+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:10:10.977+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:10:11.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.312 seconds
+[2026-03-16T17:10:41.413+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:10:41.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:10:41.417+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:10:41.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:10:41.456+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:10:41.646+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:10:41.646+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:10:41.671+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:10:41.670+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:10:41.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.322 seconds
+[2026-03-16T17:11:12.102+0000] {processor.py:161} INFO - Started process (PID=266) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:11:12.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:11:12.106+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:11:12.106+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:11:12.154+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:11:12.316+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:11:12.316+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:11:12.341+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:11:12.341+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:11:12.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.311 seconds
+[2026-03-16T17:11:42.698+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:11:42.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:11:42.702+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:11:42.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:11:42.731+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:11:42.948+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:11:42.947+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:11:42.977+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:11:42.976+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:11:43.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.350 seconds
+[2026-03-16T17:12:13.135+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:12:13.137+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:12:13.139+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:12:13.139+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:12:13.186+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:12:13.521+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:12:13.521+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:12:13.558+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:12:13.558+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:12:13.626+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.496 seconds
+[2026-03-16T17:12:43.716+0000] {processor.py:161} INFO - Started process (PID=281) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:12:43.718+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:12:43.721+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:12:43.720+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:12:43.767+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:12:44.000+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:12:44.000+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:12:44.036+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:12:44.036+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:12:44.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.379 seconds
+[2026-03-16T17:13:14.327+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:13:14.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:13:14.332+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:13:14.332+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:13:14.373+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:13:14.556+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:13:14.556+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:13:14.589+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:13:14.589+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:13:14.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.329 seconds
+[2026-03-16T17:13:44.778+0000] {processor.py:161} INFO - Started process (PID=293) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:13:44.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:13:44.782+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:13:44.781+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:13:44.818+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:13:45.028+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:13:45.027+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:13:45.089+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:13:45.089+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:13:45.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.392 seconds
+[2026-03-16T17:14:15.294+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:14:15.296+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:14:15.298+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:14:15.298+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:14:15.341+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:14:15.693+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:14:15.693+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:14:15.721+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:14:15.721+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:14:15.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.494 seconds
+[2026-03-16T17:14:46.132+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:14:46.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:14:46.136+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:14:46.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:14:46.171+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:14:46.416+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:14:46.415+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:14:46.500+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:14:46.499+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:14:46.611+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.485 seconds
+[2026-03-16T17:15:17.091+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:15:17.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:15:17.096+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:15:17.096+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:15:17.128+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:15:17.296+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:15:17.296+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:15:17.322+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:15:17.322+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:15:17.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.291 seconds
+[2026-03-16T17:15:47.832+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:15:47.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:15:47.837+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:15:47.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:15:47.878+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:15:48.062+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:15:48.062+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:15:48.088+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:15:48.088+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:15:48.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.330 seconds
+[2026-03-16T17:16:18.544+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:16:18.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:16:18.552+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:16:18.551+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:16:18.619+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:16:18.852+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:16:18.851+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:16:18.881+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:16:18.881+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:16:18.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.408 seconds
+[2026-03-16T17:16:49.290+0000] {processor.py:161} INFO - Started process (PID=329) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:16:49.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:16:49.295+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:16:49.294+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:16:49.341+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:16:49.552+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:16:49.551+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:16:49.590+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:16:49.590+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:16:49.664+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.378 seconds
+[2026-03-16T17:17:20.002+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:17:20.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:17:20.008+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:17:20.007+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:17:20.050+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:17:20.280+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:17:20.280+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:17:20.325+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:17:20.325+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:17:20.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.389 seconds
+[2026-03-16T17:17:50.707+0000] {processor.py:161} INFO - Started process (PID=341) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:17:50.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:17:50.712+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:17:50.712+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:17:50.755+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:17:50.976+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:17:50.976+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:17:51.008+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:17:51.008+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:17:51.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.373 seconds
+[2026-03-16T17:18:21.365+0000] {processor.py:161} INFO - Started process (PID=348) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:18:21.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:18:21.369+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:18:21.369+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:18:21.401+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:18:21.569+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:18:21.569+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:18:21.595+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:18:21.594+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:18:21.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.312 seconds
+[2026-03-16T17:18:51.998+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:18:52.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:18:52.007+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:18:52.004+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:18:52.046+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:18:52.265+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:18:52.265+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:18:52.303+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:18:52.302+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:18:52.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.375 seconds
+[2026-03-16T17:19:22.764+0000] {processor.py:161} INFO - Started process (PID=360) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:19:22.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:19:22.769+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:19:22.768+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:19:22.803+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:19:23.019+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:19:23.019+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:19:23.046+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:19:23.046+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:19:23.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.360 seconds
+[2026-03-16T17:19:53.502+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:19:53.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:19:53.508+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:19:53.507+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:19:53.570+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:19:53.851+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:19:53.851+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:19:53.883+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:19:53.882+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:19:53.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.456 seconds
+[2026-03-16T17:20:24.280+0000] {processor.py:161} INFO - Started process (PID=374) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:20:24.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:20:24.284+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:20:24.284+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:20:24.329+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:20:24.593+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:20:24.593+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:20:24.644+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:20:24.643+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:20:24.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.445 seconds
+[2026-03-16T17:20:55.041+0000] {processor.py:161} INFO - Started process (PID=379) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:20:55.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:20:55.044+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:20:55.044+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:20:55.094+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:20:55.330+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:20:55.330+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:20:55.361+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:20:55.361+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:20:55.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.385 seconds
+[2026-03-16T17:21:25.733+0000] {processor.py:161} INFO - Started process (PID=386) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:21:25.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:21:25.738+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:21:25.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:21:25.778+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:21:25.992+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:21:25.991+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:21:26.020+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:21:26.020+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:21:26.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.359 seconds
+[2026-03-16T17:21:56.413+0000] {processor.py:161} INFO - Started process (PID=391) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:21:56.416+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:21:56.418+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:21:56.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:21:56.445+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:21:56.634+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:21:56.634+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:21:56.672+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:21:56.671+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:21:56.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.350 seconds
+[2026-03-16T17:22:27.038+0000] {processor.py:161} INFO - Started process (PID=398) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:22:27.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:22:27.042+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:22:27.041+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:22:27.070+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:22:27.223+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:22:27.222+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:22:27.254+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:22:27.253+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:22:27.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.292 seconds
+[2026-03-16T17:22:57.624+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:22:57.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:22:57.628+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:22:57.627+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:22:57.659+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:22:57.855+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:22:57.855+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:22:57.882+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:22:57.882+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:22:57.949+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.332 seconds
+[2026-03-16T17:23:28.322+0000] {processor.py:161} INFO - Started process (PID=410) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:23:28.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:23:28.325+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:23:28.324+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:23:28.359+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:23:28.511+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:23:28.511+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:23:28.534+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:23:28.534+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:23:28.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.276 seconds
+[2026-03-16T17:23:58.945+0000] {processor.py:161} INFO - Started process (PID=415) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:23:58.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:23:58.949+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:23:58.949+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:23:58.989+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:23:59.216+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:23:59.215+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:23:59.244+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:23:59.244+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:23:59.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.372 seconds
+[2026-03-16T17:24:29.695+0000] {processor.py:161} INFO - Started process (PID=420) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:24:29.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:24:29.699+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:24:29.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:24:29.739+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:24:29.969+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:24:29.968+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:24:30.007+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:24:30.006+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:24:30.082+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.391 seconds
+[2026-03-16T17:25:00.386+0000] {processor.py:161} INFO - Started process (PID=425) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:25:00.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:25:00.390+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:25:00.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:25:00.435+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:25:00.657+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:25:00.656+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:25:00.684+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:25:00.684+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:25:00.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.365 seconds
+[2026-03-16T17:25:31.078+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:25:31.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:25:31.082+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:25:31.081+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:25:31.124+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:25:31.345+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:25:31.344+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:25:31.373+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:25:31.373+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:25:31.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.360 seconds
+[2026-03-16T17:26:01.750+0000] {processor.py:161} INFO - Started process (PID=435) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:26:01.761+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:26:01.767+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:26:01.766+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:26:01.805+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:26:01.989+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:26:01.989+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:26:02.015+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:26:02.014+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:26:02.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.336 seconds
+[2026-03-16T17:26:32.399+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:26:32.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:26:32.403+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:26:32.403+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:26:32.436+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:26:32.596+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:26:32.596+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:26:32.624+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:26:32.623+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:26:32.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.304 seconds
+[2026-03-16T17:27:03.048+0000] {processor.py:161} INFO - Started process (PID=445) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:27:03.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:27:03.052+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:27:03.051+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:27:03.084+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:27:03.397+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:27:03.396+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:27:03.428+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:27:03.428+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:27:03.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.455 seconds
+[2026-03-16T17:27:33.819+0000] {processor.py:161} INFO - Started process (PID=450) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:27:33.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:27:33.826+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:27:33.826+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:27:33.871+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:27:34.101+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:27:34.101+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:27:34.143+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:27:34.143+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:27:34.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.521 seconds
+[2026-03-16T17:28:04.684+0000] {processor.py:161} INFO - Started process (PID=455) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:28:04.686+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:28:04.688+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:28:04.688+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:28:04.731+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:28:04.983+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:28:04.983+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:28:05.029+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:28:05.029+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:28:05.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.415 seconds
+[2026-03-16T17:28:35.589+0000] {processor.py:161} INFO - Started process (PID=460) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:28:35.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:28:35.598+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:28:35.597+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:28:35.665+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:28:36.052+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:28:36.051+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:28:36.207+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:28:36.207+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:28:36.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.818 seconds
+[2026-03-16T17:29:06.756+0000] {processor.py:161} INFO - Started process (PID=465) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:29:06.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:29:06.760+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:29:06.760+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:29:06.811+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:29:07.032+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:29:07.032+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:29:07.064+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:29:07.063+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:29:07.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.370 seconds
+[2026-03-16T17:29:37.627+0000] {processor.py:161} INFO - Started process (PID=470) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:29:37.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:29:37.635+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:29:37.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:29:37.720+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:29:38.139+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:29:38.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:29:38.166+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:29:38.165+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:29:38.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.608 seconds
+[2026-03-16T17:30:08.334+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:30:08.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:30:08.338+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:30:08.338+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:30:08.371+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:30:08.585+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:30:08.584+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:30:08.610+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:30:08.610+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:30:08.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.345 seconds
+[2026-03-16T17:30:39.055+0000] {processor.py:161} INFO - Started process (PID=480) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:30:39.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:30:39.064+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:30:39.063+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:30:39.124+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:30:39.350+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:30:39.349+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:30:39.396+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:30:39.396+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:30:39.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.426 seconds
+[2026-03-16T17:31:09.796+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:31:09.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/herbarium_etl_dag.py for tasks to queue
+[2026-03-16T17:31:09.800+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:31:09.799+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:31:09.832+0000] {processor.py:840} INFO - DAG(s) 'herbarium_etl_dag' retrieved from /opt/airflow/dags/herbarium_etl_dag.py
+[2026-03-16T17:31:10.007+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:31:10.006+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T17:31:10.036+0000] {logging_mixin.py:188} INFO - [2026-03-16T17:31:10.036+0000] {dag.py:3823} INFO - Setting next_dagrun for herbarium_etl_dag to None, run_after=None
+[2026-03-16T17:31:10.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/herbarium_etl_dag.py took 0.314 seconds
