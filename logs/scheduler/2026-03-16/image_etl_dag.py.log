@@ -1,0 +1,1150 @@
+[2026-03-16T18:10:24.428+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:10:24.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:10:24.435+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:10:24.435+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:10:24.744+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:10:24.626+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:10:24.754+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:10:25.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.736 seconds
+[2026-03-16T18:10:55.537+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:10:55.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:10:55.544+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:10:55.543+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:10:55.577+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:10:55.571+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:10:55.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:10:55.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.256 seconds
+[2026-03-16T18:11:26.368+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:11:26.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:11:26.373+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:11:26.372+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:11:26.409+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:11:26.400+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:11:26.412+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:11:26.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.243 seconds
+[2026-03-16T18:11:56.979+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:11:56.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:11:56.984+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:11:56.983+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:11:57.024+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:11:57.016+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:11:57.027+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:11:57.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.308 seconds
+[2026-03-16T18:12:27.736+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:12:27.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:12:27.740+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:12:27.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:12:27.785+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:12:27.776+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:12:27.788+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:12:28.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.366 seconds
+[2026-03-16T18:12:58.670+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:12:58.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:12:58.677+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:12:58.676+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:12:58.727+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:12:58.713+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:12:58.730+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:12:58.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.305 seconds
+[2026-03-16T18:13:29.514+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:13:29.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:13:29.520+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:13:29.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:13:29.562+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:13:29.555+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:13:29.565+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:13:29.774+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.267 seconds
+[2026-03-16T18:14:00.824+0000] {processor.py:161} INFO - Started process (PID=245) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:14:00.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:14:00.847+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:14:00.846+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:14:01.116+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:14:01.103+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:14:01.122+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:14:01.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.689 seconds
+[2026-03-16T18:15:02.130+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:15:02.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:15:02.139+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:15:02.138+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:15:02.293+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:15:02.277+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:15:02.298+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:15:02.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.624 seconds
+[2026-03-16T18:15:33.911+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:15:33.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:15:33.920+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:15:33.919+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:15:33.984+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:15:33.971+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:15:33.989+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:15:34.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.493 seconds
+[2026-03-16T18:16:04.614+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:16:04.619+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:16:04.623+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:16:04.622+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:16:04.694+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:16:04.679+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:16:04.698+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:16:05.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.542 seconds
+[2026-03-16T18:16:35.505+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:16:35.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:16:35.516+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:16:35.514+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:16:35.631+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:16:35.609+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:16:35.636+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:16:35.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.510 seconds
+[2026-03-16T18:17:06.350+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:17:06.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:17:06.358+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:17:06.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:17:06.413+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:17:06.401+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:17:06.417+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:17:06.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.393 seconds
+[2026-03-16T18:17:37.600+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:17:37.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:17:37.606+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:17:37.605+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:17:37.652+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:17:37.643+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:17:37.655+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:17:37.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.378 seconds
+[2026-03-16T18:18:08.571+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:18:08.575+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:18:08.580+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:18:08.578+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:18:08.794+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:18:08.779+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:18:08.799+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:18:09.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.673 seconds
+[2026-03-16T18:19:53.448+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:19:53.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:19:53.465+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:19:53.457+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:19:53.629+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:19:53.616+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:19:53.634+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:19:54.404+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.976 seconds
+[2026-03-16T18:20:25.422+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:20:25.426+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:20:25.430+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:20:25.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:20:25.489+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:20:25.477+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:20:25.494+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:20:26.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.924 seconds
+[2026-03-16T18:20:56.631+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:20:56.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:20:56.640+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:20:56.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:20:56.703+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:20:56.690+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:20:56.708+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:20:57.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.426 seconds
+[2026-03-16T18:21:27.442+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:21:27.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:21:27.448+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:21:27.447+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:21:27.491+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:21:27.481+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:21:27.494+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:21:27.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.467 seconds
+[2026-03-16T18:21:58.313+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:21:58.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:21:58.323+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:21:58.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:21:58.386+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:21:58.374+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:21:58.391+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:21:58.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.608 seconds
+[2026-03-16T18:22:29.238+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:22:29.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:22:29.250+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:22:29.248+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:22:29.310+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:22:29.299+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:22:29.314+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:22:29.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.496 seconds
+[2026-03-16T18:23:00.051+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:23:00.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:23:00.059+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:23:00.058+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:23:00.116+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:23:00.104+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:23:00.121+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:23:00.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.440 seconds
+[2026-03-16T18:23:31.237+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:23:31.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:23:31.245+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:23:31.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:23:31.300+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:23:31.287+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:23:31.304+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:23:31.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.392 seconds
+[2026-03-16T18:24:02.092+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:24:02.096+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:24:02.099+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:24:02.099+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:24:02.155+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:24:02.142+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:24:02.159+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:24:02.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.463 seconds
+[2026-03-16T18:24:33.004+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:24:33.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:24:33.010+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:24:33.010+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:24:33.078+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:24:33.063+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:24:33.083+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:24:33.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.431 seconds
+[2026-03-16T18:25:03.984+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:25:04.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:25:04.039+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:25:04.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:25:04.183+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:25:04.171+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:25:04.187+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:25:04.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.512 seconds
+[2026-03-16T18:25:34.888+0000] {processor.py:161} INFO - Started process (PID=293) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:25:34.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:25:34.897+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:25:34.897+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:25:34.964+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:25:34.949+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:25:34.969+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:25:35.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.555 seconds
+[2026-03-16T18:26:05.618+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:26:05.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:26:05.625+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:05.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:26:05.668+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:05.658+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 7, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[2026-03-16T18:26:05.672+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:26:05.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.330 seconds
+[2026-03-16T18:26:36.691+0000] {processor.py:161} INFO - Started process (PID=338) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:26:36.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:26:36.698+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:36.697+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:26:36.898+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:26:37.514+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:37.512+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:image_etl_dag
+[2026-03-16T18:26:37.540+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:37.539+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:image_etl_dag
+[2026-03-16T18:26:37.557+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:37.556+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:image_etl_dag
+[2026-03-16T18:26:37.559+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:37.559+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:26:37.602+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:37.601+0000] {dag.py:3058} INFO - Creating ORM DAG for image_etl_dag
+[2026-03-16T18:26:37.604+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:26:37.604+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:26:37.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 1.003 seconds
+[2026-03-16T18:27:23.851+0000] {processor.py:161} INFO - Started process (PID=206) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:27:23.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:27:23.859+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:27:23.858+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:27:23.937+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:27:24.627+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:27:24.626+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:27:24.687+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:27:24.686+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:27:24.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.967 seconds
+[2026-03-16T18:27:55.536+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:27:55.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:27:55.542+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:27:55.541+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:27:55.611+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:27:55.963+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:27:55.963+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:27:56.029+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:27:56.029+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:27:56.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.607 seconds
+[2026-03-16T18:28:26.937+0000] {processor.py:161} INFO - Started process (PID=226) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:28:26.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:28:26.947+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:28:26.946+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:28:27.167+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:28:27.577+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:28:27.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:28:27.631+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:28:27.630+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:28:27.755+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.829 seconds
+[2026-03-16T18:28:58.400+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:28:58.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:28:58.409+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:28:58.407+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:28:58.483+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:28:58.812+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:28:58.811+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:28:58.942+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:28:58.941+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:28:59.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.690 seconds
+[2026-03-16T18:29:30.006+0000] {processor.py:161} INFO - Started process (PID=246) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:29:30.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:29:30.014+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:29:30.013+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:29:30.083+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:29:30.393+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:29:30.393+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:29:30.443+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:29:30.443+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:29:30.584+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.594 seconds
+[2026-03-16T18:30:01.441+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:30:01.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:30:01.448+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:30:01.447+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:30:01.525+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:30:02.030+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:30:02.030+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:30:02.077+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:30:02.077+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:30:02.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.778 seconds
+[2026-03-16T18:30:32.797+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:30:32.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:30:32.804+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:30:32.803+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:30:32.871+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:30:33.192+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:30:33.192+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:30:33.239+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:30:33.239+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:30:33.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.551 seconds
+[2026-03-16T18:31:03.906+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:31:03.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:31:03.913+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:31:03.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:31:03.987+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:31:04.377+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:31:04.376+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:31:04.471+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:31:04.471+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:31:04.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.769 seconds
+[2026-03-16T18:31:35.326+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:31:35.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:31:35.333+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:31:35.332+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:31:35.403+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:31:35.758+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:31:35.758+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:31:35.801+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:31:35.801+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:31:35.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.576 seconds
+[2026-03-16T18:32:06.476+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:32:06.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:32:06.484+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:32:06.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:32:06.571+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:32:06.965+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:32:06.965+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:32:07.015+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:32:07.014+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:32:07.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.665 seconds
+[2026-03-16T18:32:38.103+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:32:38.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:32:38.111+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:32:38.110+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:32:38.187+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:32:39.161+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:32:39.160+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:32:39.210+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:32:39.209+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:32:39.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 1.234 seconds
+[2026-03-16T18:33:09.978+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:33:09.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:33:09.986+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:33:09.986+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:33:10.065+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:33:10.421+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:33:10.420+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:33:10.473+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:33:10.473+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:33:10.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.614 seconds
+[2026-03-16T18:33:38.140+0000] {processor.py:161} INFO - Started process (PID=328) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:33:38.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:33:38.146+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:33:38.145+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:33:38.244+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:33:39.024+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:33:39.024+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:33:39.124+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:33:39.123+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:33:39.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 1.104 seconds
+[2026-03-16T18:34:24.692+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:34:24.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:34:24.699+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:34:24.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:34:24.771+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:34:25.126+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:34:25.126+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:34:25.179+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:34:25.179+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:34:25.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.609 seconds
+[2026-03-16T18:34:56.002+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:34:56.006+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:34:56.010+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:34:56.009+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:34:56.070+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:34:56.356+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:34:56.356+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:34:56.400+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:34:56.400+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:34:56.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.494 seconds
+[2026-03-16T18:35:27.149+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:35:27.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:35:27.261+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:35:27.259+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:35:27.347+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:35:27.647+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:35:27.646+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:35:27.701+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:35:27.700+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:35:27.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.670 seconds
+[2026-03-16T18:35:58.747+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:35:58.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:35:58.760+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:35:58.759+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:35:58.828+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:35:59.217+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:35:59.217+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:35:59.269+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:35:59.268+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:35:59.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.645 seconds
+[2026-03-16T18:36:30.080+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:36:30.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:36:30.087+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:36:30.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:36:30.176+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:36:30.520+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:36:30.520+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:36:30.565+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:36:30.565+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:36:30.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.600 seconds
+[2026-03-16T18:37:01.288+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:01.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:37:01.298+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:01.297+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:01.363+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:01.712+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:01.711+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:37:01.783+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:01.782+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:37:01.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.618 seconds
+[2026-03-16T18:37:32.949+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:32.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:37:32.965+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:32.964+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:33.041+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:33.387+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:33.386+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:37:33.435+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:33.434+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:37:33.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.856 seconds
+[2026-03-16T18:37:41.343+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:41.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:37:41.357+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:41.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:41.599+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:37:41.985+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:41.984+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:37:42.033+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:37:42.032+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:37:42.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.809 seconds
+[2026-03-16T18:38:17.589+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:38:17.593+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:38:17.596+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:38:17.596+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:38:17.653+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:38:18.085+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:38:18.085+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:38:18.138+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:38:18.138+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:38:18.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.705 seconds
+[2026-03-16T18:38:48.983+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:38:48.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:38:48.991+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:38:48.990+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:38:49.058+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:38:49.397+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:38:49.396+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:38:49.447+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:38:49.447+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:38:49.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.583 seconds
+[2026-03-16T18:39:20.173+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:39:20.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:39:20.180+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:39:20.179+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:39:20.261+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:39:20.603+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:39:20.603+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:39:20.639+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:39:20.638+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:39:20.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.562 seconds
+[2026-03-16T18:39:51.370+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:39:51.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:39:51.379+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:39:51.378+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:39:51.472+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:39:52.030+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:39:52.029+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:39:52.087+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:39:52.086+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:39:52.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.872 seconds
+[2026-03-16T18:40:22.823+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:40:22.827+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:40:22.832+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:40:22.831+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:40:22.921+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:40:23.347+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:40:23.346+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:40:23.400+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:40:23.399+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:40:23.512+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.703 seconds
+[2026-03-16T18:40:54.143+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:40:54.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:40:54.151+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:40:54.150+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:40:54.238+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:40:54.664+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:40:54.661+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:40:54.771+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:40:54.771+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:40:55.000+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.880 seconds
+[2026-03-16T18:41:25.711+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:41:25.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:41:25.719+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:41:25.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:41:25.803+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:41:26.127+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:41:26.126+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:41:26.177+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:41:26.176+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:41:26.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.564 seconds
+[2026-03-16T18:41:56.878+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:41:56.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:41:56.883+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:41:56.882+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:41:56.955+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:41:57.296+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:41:57.295+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:41:57.344+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:41:57.344+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:41:57.436+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.568 seconds
+[2026-03-16T18:42:27.998+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:42:28.003+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:42:28.006+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:42:28.005+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:42:28.071+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:42:28.342+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:42:28.341+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:42:28.387+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:42:28.386+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:42:28.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.498 seconds
+[2026-03-16T18:42:59.055+0000] {processor.py:161} INFO - Started process (PID=297) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:42:59.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:42:59.060+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:42:59.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:42:59.126+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:42:59.417+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:42:59.416+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:42:59.466+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:42:59.466+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:42:59.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.513 seconds
+[2026-03-16T18:43:30.281+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:43:30.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:43:30.297+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:43:30.296+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:43:30.368+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:43:30.731+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:43:30.730+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:43:30.782+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:43:30.782+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:43:30.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.604 seconds
+[2026-03-16T18:44:01.441+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:44:01.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:44:01.449+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:44:01.447+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:44:01.519+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:44:01.959+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:44:01.959+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:44:02.006+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:44:02.005+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:44:02.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.662 seconds
+[2026-03-16T18:44:32.720+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:44:32.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:44:32.727+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:44:32.727+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:44:32.799+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:44:33.210+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:44:33.209+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:44:33.273+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:44:33.272+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:44:33.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.670 seconds
+[2026-03-16T18:45:03.966+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:45:03.975+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:45:03.981+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:45:03.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:45:04.047+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:45:04.390+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:45:04.390+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:45:04.435+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:45:04.435+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:45:04.528+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.576 seconds
+[2026-03-16T18:45:35.273+0000] {processor.py:161} INFO - Started process (PID=347) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:45:35.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:45:35.280+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:45:35.279+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:45:35.343+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:45:35.656+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:45:35.656+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:45:35.706+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:45:35.705+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:45:35.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.554 seconds
+[2026-03-16T18:46:06.615+0000] {processor.py:161} INFO - Started process (PID=357) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:06.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:46:06.621+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:06.620+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:06.697+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:07.081+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:07.080+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:46:07.141+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:07.140+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:46:07.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.729 seconds
+[2026-03-16T18:46:38.232+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:38.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:46:38.237+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:38.237+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:38.313+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:38.583+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:38.583+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:46:38.650+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:38.649+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:46:38.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.544 seconds
+[2026-03-16T18:46:42.457+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:42.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:46:42.463+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:42.463+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:42.510+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:46:42.508+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 35
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:46:42.512+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:46:42.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.353 seconds
+[2026-03-16T18:47:13.461+0000] {processor.py:161} INFO - Started process (PID=387) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:13.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:47:13.468+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:13.467+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:13.518+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:13.516+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 35
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:47:13.519+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:13.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.383 seconds
+[2026-03-16T18:47:34.200+0000] {processor.py:161} INFO - Started process (PID=392) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:34.203+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:47:34.206+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:34.205+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:34.249+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:34.247+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 36
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:47:34.250+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:34.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.421 seconds
+[2026-03-16T18:47:36.775+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:36.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:47:36.781+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:36.781+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:36.839+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:36.837+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 37
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:47:36.840+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:37.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.389 seconds
+[2026-03-16T18:47:40.335+0000] {processor.py:161} INFO - Started process (PID=405) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:40.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:47:40.342+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:40.341+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:40.382+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:47:40.380+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 37
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:47:40.384+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:47:40.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.343 seconds
+[2026-03-16T18:48:11.248+0000] {processor.py:161} INFO - Started process (PID=412) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:48:11.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:48:11.255+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:48:11.254+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:48:11.296+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:48:11.294+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 37
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:48:11.297+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:48:11.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.386 seconds
+[2026-03-16T18:48:42.292+0000] {processor.py:161} INFO - Started process (PID=422) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:48:42.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:48:42.298+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:48:42.298+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:48:42.375+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:48:42.372+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 37
+    response = requests.get(full_url)
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:48:42.378+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:48:42.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.489 seconds
+[2026-03-16T18:49:05.534+0000] {processor.py:161} INFO - Started process (PID=432) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:49:05.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:49:05.538+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:49:05.538+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:49:05.581+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:49:05.578+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 39
+    file_path = f"{TEMP_DIR}/{specimen_id}.jpg"
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:49:05.582+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:49:05.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.448 seconds
+[2026-03-16T18:49:36.217+0000] {processor.py:161} INFO - Started process (PID=442) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:49:36.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:49:36.224+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:49:36.222+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:49:36.268+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:49:36.266+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 39
+    file_path = f"{TEMP_DIR}/{specimen_id}.jpg"
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:49:36.270+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:49:36.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.361 seconds
+[2026-03-16T18:50:07.391+0000] {processor.py:161} INFO - Started process (PID=452) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:07.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:50:07.398+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:50:07.397+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:07.447+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:50:07.446+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 39
+    file_path = f"{TEMP_DIR}/{specimen_id}.jpg"
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:50:07.449+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:07.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.382 seconds
+[2026-03-16T18:50:37.918+0000] {processor.py:161} INFO - Started process (PID=462) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:37.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:50:37.923+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:50:37.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:37.968+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:50:37.966+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 39
+    file_path = f"{TEMP_DIR}/{specimen_id}.jpg"
+    ^
+IndentationError: unexpected indent
+[2026-03-16T18:50:37.969+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:38.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.396 seconds
+[2026-03-16T18:50:40.441+0000] {processor.py:161} INFO - Started process (PID=467) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:40.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:50:40.450+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:50:40.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:40.486+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:50:40.484+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:50:40.488+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:50:40.853+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.418 seconds
+[2026-03-16T18:51:11.484+0000] {processor.py:161} INFO - Started process (PID=477) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:51:11.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:51:11.489+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:51:11.488+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:51:11.535+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:51:11.532+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:51:11.537+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:51:11.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.332 seconds
+[2026-03-16T18:51:48.455+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:51:48.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:51:48.462+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:51:48.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:51:48.507+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:51:48.505+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:51:48.510+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:51:48.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.410 seconds
+[2026-03-16T18:52:19.491+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:52:19.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:52:19.505+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:52:19.503+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:52:19.572+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:52:19.570+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:52:19.574+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:52:20.244+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.767 seconds
+[2026-03-16T18:52:51.045+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:52:51.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:52:51.053+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:52:51.052+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:52:51.130+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:52:51.127+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:52:51.132+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:52:51.575+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.551 seconds
+[2026-03-16T18:53:22.164+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:53:22.168+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:53:22.171+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:53:22.171+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:53:22.227+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:53:22.224+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:53:22.229+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:53:22.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.654 seconds
+[2026-03-16T18:53:53.434+0000] {processor.py:161} INFO - Started process (PID=245) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:53:53.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:53:53.442+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:53:53.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:53:53.490+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:53:53.487+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:53:53.491+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:53:53.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.461 seconds
+[2026-03-16T18:54:24.679+0000] {processor.py:161} INFO - Started process (PID=255) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:54:24.684+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:54:24.688+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:54:24.687+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:54:24.752+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:54:24.749+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:54:24.754+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:54:25.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.452 seconds
+[2026-03-16T18:54:55.677+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:54:55.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:54:55.684+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:54:55.683+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:54:55.729+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:54:55.727+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:54:55.731+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:54:56.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.393 seconds
+[2026-03-16T18:55:26.711+0000] {processor.py:161} INFO - Started process (PID=275) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:55:26.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:55:26.719+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:55:26.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:55:26.772+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:55:26.770+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:55:26.774+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:55:27.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.621 seconds
+[2026-03-16T18:55:58.051+0000] {processor.py:161} INFO - Started process (PID=285) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:55:58.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:55:58.059+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:55:58.058+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:55:58.104+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:55:58.101+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:55:58.105+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:55:58.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.399 seconds
+[2026-03-16T18:56:29.005+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:56:29.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:56:29.014+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:56:29.012+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:56:29.075+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:56:29.073+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:56:29.077+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:56:29.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.407 seconds
+[2026-03-16T18:56:59.933+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:56:59.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:56:59.939+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:56:59.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:56:59.993+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:56:59.991+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:56:59.995+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:00.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.457 seconds
+[2026-03-16T18:57:30.965+0000] {processor.py:161} INFO - Started process (PID=315) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:30.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:57:30.974+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:57:30.973+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:31.028+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:57:31.023+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/image_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/image_etl_dag.py", line 31
+    for row in rows:
+                   ^
+IndentationError: unindent does not match any outer indentation level
+[2026-03-16T18:57:31.032+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:31.361+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.411 seconds
+[2026-03-16T18:57:42.666+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:42.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:57:42.672+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:57:42.672+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:42.768+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:57:43.389+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:57:43.388+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:57:43.432+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:57:43.432+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:57:43.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.899 seconds
+[2026-03-16T18:58:13.869+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:58:13.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:58:13.877+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:58:13.877+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:58:13.973+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:58:14.296+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:58:14.295+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:58:14.350+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:58:14.349+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:58:14.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.570 seconds
+[2026-03-16T18:58:44.451+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:58:44.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:58:44.459+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:58:44.458+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:58:44.530+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:58:44.835+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:58:44.835+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:58:44.880+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:58:44.879+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:58:44.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.554 seconds
+[2026-03-16T18:59:15.599+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:59:15.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:59:15.607+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:59:15.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:59:15.711+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:59:16.030+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:59:16.030+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:59:16.117+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:59:16.116+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:59:16.269+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.688 seconds
+[2026-03-16T18:59:46.845+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:59:46.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T18:59:46.855+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:59:46.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:59:46.940+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T18:59:47.263+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:59:47.262+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T18:59:47.309+0000] {logging_mixin.py:188} INFO - [2026-03-16T18:59:47.309+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T18:59:47.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.588 seconds
+[2026-03-16T19:00:18.028+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:00:18.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T19:00:18.035+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:00:18.034+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:00:18.101+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:00:18.503+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:00:18.502+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T19:00:18.549+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:00:18.549+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T19:00:18.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.623 seconds
+[2026-03-16T19:00:49.223+0000] {processor.py:161} INFO - Started process (PID=245) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:00:49.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T19:00:49.231+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:00:49.230+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:00:49.310+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:00:49.697+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:00:49.697+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T19:00:49.742+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:00:49.742+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T19:00:49.829+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.620 seconds
+[2026-03-16T19:01:20.410+0000] {processor.py:161} INFO - Started process (PID=255) to work on /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:01:20.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/image_etl_dag.py for tasks to queue
+[2026-03-16T19:01:20.419+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:01:20.418+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:01:20.480+0000] {processor.py:840} INFO - DAG(s) 'image_etl_dag' retrieved from /opt/airflow/dags/image_etl_dag.py
+[2026-03-16T19:01:20.788+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:01:20.787+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-16T19:01:20.839+0000] {logging_mixin.py:188} INFO - [2026-03-16T19:01:20.838+0000] {dag.py:3823} INFO - Setting next_dagrun for image_etl_dag to None, run_after=None
+[2026-03-16T19:01:20.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/image_etl_dag.py took 0.568 seconds

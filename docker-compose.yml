@@ -1,4 +1,4 @@
-
+version: "3.8"
 
 services:
 
@@ -28,7 +28,7 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       AIRFLOW__WEBSERVER__SECRET_KEY: airflow_secret
-      AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-postgres
+      AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: "apache-airflow-providers-postgres pillow requests"
     command: >
       bash -c "
       airflow db migrate &&
@@ -61,12 +61,20 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       AIRFLOW__WEBSERVER__SECRET_KEY: airflow_secret
-      AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-postgres
+
+     
+      AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: "apache-airflow-providers-postgres pillow requests"
+
     ports:
       - "8080:8080"
     command: webserver
     networks:
       - airflow-network
+
+    
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
@@ -86,10 +94,17 @@ services:
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "false"
       AIRFLOW__WEBSERVER__SECRET_KEY: airflow_secret
-      AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: apache-airflow-providers-postgres
+
+      
+      AIRFLOW_PIP_ADDITIONAL_REQUIREMENTS: "apache-airflow-providers-postgres pillow requests"
+
     command: scheduler
     networks:
       - airflow-network
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs

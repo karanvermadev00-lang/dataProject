@@ -15,13 +15,11 @@ CONN_ID = "herbarium_postgres"
 # Default arguments for the DAG
 default_args = {
     "owner": "airflow",
-    "retries": 3,  # Retry the DAG task 3 times in case of failure
-    "retry_delay": timedelta(minutes=5),  # Delay between retries
+    "retries": 3,  
+    "retry_delay": timedelta(minutes=5),  
 }
 
-# -------------------------------
-# Barcode Normalization Function
-# -------------------------------
+
 def normalize_barcode(barcode):
     if not barcode or not barcode.startswith("LWG"):
         return None
@@ -37,9 +35,7 @@ def normalize_barcode(barcode):
 
     return f"LWG{digits}"
 
-# -------------------------------
-# ETL Process Function
-# -------------------------------
+
 def etl_process():
     # Initialize Postgres hook
     hook = PostgresHook(postgres_conn_id=CONN_ID)
@@ -72,14 +68,13 @@ def etl_process():
         for row in rows:
             record = dict(zip(columns, row))
 
-            # Handle missing/incorrect columns with safe get()
+            
             taxonomy_data = record.get("taxonomy_data")
             barcode = record.get("barcode")
             genus = record.get("genus")
             species = record.get("species")
             
-            # ---------- TRANSFORM ----------
-            # Handle taxonomy_data (TEXT → JSON)
+            
             try:
                 taxonomy_json = json.loads(taxonomy_data) if taxonomy_data else None
             except Exception as e:
@@ -170,13 +165,11 @@ def etl_process():
         raise AirflowException(f"ETL process failed: {e}")
 
     finally:
-        # Ensure the cursor and connection are closed
+        
         cur.close()
         conn.close()
 
-# -------------------------------
-# DAG DEFINITION
-# -------------------------------
+
 with DAG(
     dag_id="herbarium_etl_dag",
     start_date=datetime(2024, 1, 1),
@@ -193,5 +186,5 @@ with DAG(
 
     run_etl
 
-# Ensure DAG is available at module level for Airflow discovery
+
 globals()['herbarium_etl_dag'] = dag
