@@ -303,8 +303,10 @@ def image_processing_task(**context) -> None:
     batch_size = int(os.getenv("HERBARIUM_BATCH_SIZE", "1000"))
     workers = int(os.getenv("HERBARIUM_IMAGE_WORKERS", "8"))
 
-    original_dir = os.getenv("HERBARIUM_IMAGES_ORIGINAL_DIR", "/images_data/original")
-    icon_dir = os.getenv("HERBARIUM_IMAGES_ICON_DIR", "/images_data/icons")
+    original_dir = os.getenv("HERBARIUM_IMAGES_ORIGINAL_DIR")
+    icon_dir = os.getenv("HERBARIUM_IMAGES_ICON_DIR")
+    if not original_dir or not icon_dir:  # pragma: no cover
+        raise RuntimeError("Missing HERBARIUM_IMAGES_ORIGINAL_DIR / HERBARIUM_IMAGES_ICON_DIR env vars")
     os.makedirs(icon_dir, exist_ok=True)
 
     conn = hook.get_conn()
@@ -401,8 +403,10 @@ def detail_and_sync_task(**context) -> None:
     hook = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
 
     batch_size = int(os.getenv("HERBARIUM_BATCH_SIZE", "1000"))
-    original_dir = os.getenv("HERBARIUM_IMAGES_ORIGINAL_DIR", "/images_data/original")
-    icon_dir = os.getenv("HERBARIUM_IMAGES_ICON_DIR", "/images_data/icons")
+    original_dir = os.getenv("HERBARIUM_IMAGES_ORIGINAL_DIR")
+    icon_dir = os.getenv("HERBARIUM_IMAGES_ICON_DIR")
+    if not original_dir or not icon_dir:  # pragma: no cover
+        raise RuntimeError("Missing HERBARIUM_IMAGES_ORIGINAL_DIR / HERBARIUM_IMAGES_ICON_DIR env vars")
     os.makedirs(icon_dir, exist_ok=True)
 
     conn = hook.get_conn()
