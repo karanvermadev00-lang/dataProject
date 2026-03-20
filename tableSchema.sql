@@ -1,4 +1,4 @@
-CREATE TABLE herbarium_tasks (
+CREATE TABLE specimen_tasks (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     image_url TEXT NOT NULL,
     filename VARCHAR(255) NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE herbarium_tasks (
 );
 
 
-CREATE TABLE ci_herbarium_specimens (
+CREATE TABLE specimens (
     id UUID PRIMARY KEY,
     pk_hrb_specimen_id VARCHAR(25),
     introduction_date DATE,
@@ -138,4 +138,3 @@ INSERT INTO herbarium_tasks (id,image_url,filename,task_type,status,created_by_i
 	 ('c23d1ac2-bef2-4ae7-b1d1-02a66cee2c41'::uuid,'/api/v1/images/45450250-3cbd-43fb-b59a-5ee2cc7cd5b2-121593.jpg','121593.jpg','IMAGE_UPLOAD','RAW_UPLOAD',29,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-02-21 11:54:51.547198','2026-02-21 11:54:51.547198',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
 
-commit;
