@@ -1,0 +1,178 @@
+services:
+  airflow-init:
+    image: apache/airflow:2.9.3
+    restart: "no"
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    environment:
+      # Ensure extra python dependencies are available in the image at runtime.
+      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+
+      AIRFLOW__CORE__LOAD_DEFAULT_CONNECTIONS: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+
+      # Image/icon processing tuning (used by image_utils + DAG)
+      HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
+      HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+
+    volumes:
+      - ./dags:/dags
+      - ./plugins:/plugins
+      - ./logs:/logs
+      - ./images_data:/images_data
+    networks:
+      - herbarium_net
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        set -euo pipefail
+        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
+        airflow db migrate
+        airflow users create \
+          --username "${AIRFLOW_USERNAME}" \
+          --password "${AIRFLOW_PASSWORD}" \
+          --firstname "${AIRFLOW_FIRSTNAME}" \
+          --lastname "${AIRFLOW_LASTNAME}" \
+          --role "Admin" \
+          --email "${AIRFLOW_EMAIL}" \
+          || true
+
+  airflow-webserver:
+    image: apache/airflow:2.9.3
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    ports:
+      - "8080:8080"
+    environment:
+      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+
+      AIRFLOW__CORE__LOAD_DEFAULT_CONNECTIONS: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+
+      AIRFLOW__CORE__DAGS_FOLDER: /dags
+      AIRFLOW__CORE__PLUGINS_FOLDER: /plugins
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /logs
+
+      # Connection used by PostgresHook in the DAG.
+      AIRFLOW_CONN_POSTGRES_DEFAULT: ${AIRFLOW_CONN_POSTGRES_DEFAULT}
+
+      # Used by the DAG to resolve where original images/icons live.
+      HERBARIUM_IMAGES_ORIGINAL_DIR: /images_data/original
+      HERBARIUM_IMAGES_ICON_DIR: /images_data/icons
+      HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
+      HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+    volumes:
+      - ./dags:/dags
+      - ./plugins:/plugins
+      - ./logs:/logs
+      - ./images_data:/images_data
+    networks:
+      - herbarium_net
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        set -euo pipefail
+        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
+        exec airflow webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.9.3
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+
+      AIRFLOW__CORE__LOAD_DEFAULT_CONNECTIONS: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+
+      AIRFLOW__CORE__DAGS_FOLDER: /dags
+      AIRFLOW__CORE__PLUGINS_FOLDER: /plugins
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /logs
+
+      AIRFLOW_CONN_POSTGRES_DEFAULT: ${AIRFLOW_CONN_POSTGRES_DEFAULT}
+
+      HERBARIUM_IMAGES_ORIGINAL_DIR: /images_data/original
+      HERBARIUM_IMAGES_ICON_DIR: /images_data/icons
+      HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
+      HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+    volumes:
+      - ./dags:/dags
+      - ./plugins:/plugins
+      - ./logs:/logs
+      - ./images_data:/images_data
+    networks:
+      - herbarium_net
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        set -euo pipefail
+        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
+        exec airflow scheduler
+
+  airflow-triggerer:
+    image: apache/airflow:2.9.3
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
+
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+
+      AIRFLOW__CORE__LOAD_DEFAULT_CONNECTIONS: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+
+      AIRFLOW__CORE__DAGS_FOLDER: /dags
+      AIRFLOW__CORE__PLUGINS_FOLDER: /plugins
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /logs
+
+      AIRFLOW_CONN_POSTGRES_DEFAULT: ${AIRFLOW_CONN_POSTGRES_DEFAULT}
+
+      HERBARIUM_IMAGES_ORIGINAL_DIR: /images_data/original
+      HERBARIUM_IMAGES_ICON_DIR: /images_data/icons
+      HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
+      HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+    volumes:
+      - ./dags:/dags
+      - ./plugins:/plugins
+      - ./logs:/logs
+      - ./images_data:/images_data
+    networks:
+      - herbarium_net
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        set -euo pipefail
+        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
+        exec airflow triggerer
+
+networks:
+  herbarium_net:
+    driver: bridge

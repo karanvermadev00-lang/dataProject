@@ -1,0 +1,5 @@
+name: herbarium_project
+
+include:
+  - path: postgres-db.yaml
+  - path: airflow-stack.yaml

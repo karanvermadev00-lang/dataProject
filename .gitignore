@@ -22,3 +22,34 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# ---------------------------
+# Python / Airflow / ETL
+# ---------------------------
+*.pyc
+__pycache__/
+**/__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Airflow runtime artifacts (mounted into containers for dev)
+herbarium_project/logs/
+
+# ---------------------------
+# Secrets / local config
+# ---------------------------
+herbarium_project/.env
+
+# ---------------------------
+# Docker / local persistence
+# ---------------------------
+herbarium_project/volumes/
+
+# ---------------------------
+# Image data (large + generated)
+# ---------------------------
+herbarium_project/images_data/icons/
+herbarium_project/images_data/original/

@@ -1,3 +1,9 @@
+-- Init schema for local development / Dockerized Airflow.
+-- Source table: herbarium_tasks
+-- Target tables: ci_herbarium_specimen (parent) and ci_specimen_dtl (versioned child).
+
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
 CREATE TABLE herbarium_tasks (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     image_url TEXT NOT NULL,
@@ -6,7 +12,7 @@ CREATE TABLE herbarium_tasks (
     status VARCHAR(30) NOT NULL DEFAULT 'RAW_UPLOAD',
     created_by_id BIGINT,
     assigned_to_id BIGINT,
-    validated_by_id BIGINT,s
+    validated_by_id BIGINT,
     genus VARCHAR(100),
     species VARCHAR(100),
     family VARCHAR(100),
@@ -33,7 +39,6 @@ CREATE TABLE herbarium_tasks (
     determiner VARCHAR(255),
     habitat VARCHAR(500)
 );
-
 
 CREATE TABLE ci_herbarium_specimens (
     id UUID PRIMARY KEY,
@@ -92,6 +97,103 @@ CREATE TABLE ci_herbarium_specimens (
     segment_b_done_at TIMESTAMP WITHOUT TIME ZONE,
     segment_c_done_at TIMESTAMP WITHOUT TIME ZONE
 );
+
+-- ETL sync fields used by the Airflow DAG.
+ALTER TABLE ci_herbarium_specimens
+    ADD COLUMN IF NOT EXISTS seq_num_current INTEGER NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS latest_source_task_id UUID,
+    ADD COLUMN IF NOT EXISTS taxonomy_metadata JSONB,
+    ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    ADD COLUMN IF NOT EXISTS updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP;
+
+CREATE TABLE IF NOT EXISTS ci_specimen_dtl (
+    specimen_id UUID NOT NULL,
+    seq_num INTEGER NOT NULL,
+    source_task_id UUID NOT NULL,
+    icon_image TEXT NOT NULL,
+    taxonomy_metadata JSONB NOT NULL,
+    created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (specimen_id, seq_num),
+    UNIQUE (specimen_id, source_task_id)
+);
+
+CREATE INDEX IF NOT EXISTS ci_specimen_dtl_source_task_id_idx ON ci_specimen_dtl (source_task_id);
+CREATE INDEX IF NOT EXISTS ci_specimen_dtl_specimen_seq_idx ON ci_specimen_dtl (specimen_id, seq_num DESC);
+
+-- Dead letter table for corrupted / unreadable source images.
+-- One row per source_task_id; populated by DAG tasks.
+CREATE TABLE IF NOT EXISTS ci_specimen_image_dlq (
+    source_task_id UUID PRIMARY KEY,
+    specimen_id UUID,
+    error_text TEXT NOT NULL,
+    created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS ci_specimen_image_dlq_specimen_id_idx ON ci_specimen_image_dlq (specimen_id);
+
+-- Relationships for ERD visibility and referential integrity.
+DO $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint WHERE conname = 'fk_ci_specimen_dtl_specimen'
+    ) THEN
+        ALTER TABLE ci_specimen_dtl
+            ADD CONSTRAINT fk_ci_specimen_dtl_specimen
+            FOREIGN KEY (specimen_id)
+            REFERENCES ci_herbarium_specimens (id)
+            ON UPDATE CASCADE
+            ON DELETE CASCADE;
+    END IF;
+
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint WHERE conname = 'fk_ci_specimen_dtl_source_task'
+    ) THEN
+        ALTER TABLE ci_specimen_dtl
+            ADD CONSTRAINT fk_ci_specimen_dtl_source_task
+            FOREIGN KEY (source_task_id)
+            REFERENCES herbarium_tasks (id)
+            ON UPDATE CASCADE
+            ON DELETE RESTRICT;
+    END IF;
+
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint WHERE conname = 'fk_ci_specimen_image_dlq_source_task'
+    ) THEN
+        ALTER TABLE ci_specimen_image_dlq
+            ADD CONSTRAINT fk_ci_specimen_image_dlq_source_task
+            FOREIGN KEY (source_task_id)
+            REFERENCES herbarium_tasks (id)
+            ON UPDATE CASCADE
+            ON DELETE CASCADE;
+    END IF;
+
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint WHERE conname = 'fk_ci_specimen_image_dlq_specimen'
+    ) THEN
+        ALTER TABLE ci_specimen_image_dlq
+            ADD CONSTRAINT fk_ci_specimen_image_dlq_specimen
+            FOREIGN KEY (specimen_id)
+            REFERENCES ci_herbarium_specimens (id)
+            ON UPDATE CASCADE
+            ON DELETE SET NULL;
+    END IF;
+
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint WHERE conname = 'fk_ci_herbarium_specimens_latest_source_task'
+    ) THEN
+        ALTER TABLE ci_herbarium_specimens
+            ADD CONSTRAINT fk_ci_herbarium_specimens_latest_source_task
+            FOREIGN KEY (latest_source_task_id)
+            REFERENCES herbarium_tasks (id)
+            ON UPDATE CASCADE
+            ON DELETE SET NULL;
+    END IF;
+END $$;
+
+-- Seed sample rows into the source task table for local development.
+-- The DAG will migrate only rows where status = 'COMPLETED'.
+
 INSERT INTO herbarium_tasks (id,image_url,filename,task_type,status,created_by_id,assigned_to_id,validated_by_id,genus,species,"family",common_name,collector_name,collection_date,"location",taxonomy_data,metadata,notes,created_at,updated_at,assigned_at,transcription_completed_at,validated_at,collection_number,accession_number,accession_date,department,latitude,longitude,altitude,barcode,determiner,habitat) VALUES
 	 ('1417693e-b2d9-4f14-bff8-b40f84af6504'::uuid,'/api/v1/images/93fcb9fa-bb81-478a-8e77-3c69dde5d919-010826.jpg','010826.jpg','IMAGE_UPLOAD','COMPLETED',29,12,7,'Ficus','Hispide','Moraceae','','K.K. Singh & Kushal Kumar','1998-06-01','Kangra Valley (H.P)','{"barcode":"LWG000010826","barcodeDigits":"","genus":"Ficus","species":"Hispide","family":"Moraceae","commonName":"","collectorName":"K.K. Singh & Kushal Kumar","location":"Kangra Valley (H.P)","collectionDate":"1998-06-01","collectionNumber":"EBH-10018","accessionNumber":"88214","accessionDate":"1999-11-16","determiner":"K.K. Singh","latitude":null,"longitude":null,"altitude":null,"notes":""}','{}','','2026-02-21 10:53:57.894976','2026-03-03 04:11:14.649778','2026-03-02 04:22:08.604344','2026-03-02 04:26:37.792733','2026-03-03 04:11:14.649498','EBH-10018','88214','1999-11-16',NULL,NULL,NULL,NULL,'LWG000010826','K.K. Singh',NULL),
 	 ('76246c22-a216-45b1-a47c-932067c19795'::uuid,'/api/v1/images/fe94546a-32a5-4ded-88a4-544782ba50ba-010827.jpg','010827.jpg','IMAGE_UPLOAD','COMPLETED',29,12,7,'FicusHu','Hispide ','Moraceae','','K.K. Singh & Kushal Kumar','1999-06-01','Kangra Valley (H.P)','{"barcode":"LWG000010827","barcodeDigits":"","genus":"FicusHu","species":"Hispide ","family":"Moraceae","commonName":"","collectorName":"K.K. Singh & Kushal Kumar","location":"Kangra Valley (H.P)","collectionDate":"1999-06-01","collectionNumber":"EBH-10018","accessionNumber":"88213","accessionDate":"1999-11-16","determiner":"K.K. Singh","latitude":null,"longitude":null,"altitude":null,"notes":""}','{}','','2026-02-21 10:53:58.030109','2026-03-03 04:11:15.541034','2026-03-02 04:22:08.607699','2026-03-02 04:28:26.363824','2026-03-03 04:11:15.540861','EBH-10018','88213','1999-11-16',NULL,NULL,NULL,NULL,'LWG000010827','K.K. Singh',NULL),
@@ -137,5 +239,3 @@ INSERT INTO herbarium_tasks (id,image_url,filename,task_type,status,created_by_i
 	 ('a90470c6-eaad-4ad3-b290-16e98ecbc291'::uuid,'/api/v1/images/7a8e794c-5650-4f45-bab8-dbbb61f49899-121592.jpg','121592.jpg','IMAGE_UPLOAD','RAW_UPLOAD',29,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-02-21 11:54:51.460991','2026-02-21 11:54:51.460991',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
 	 ('c23d1ac2-bef2-4ae7-b1d1-02a66cee2c41'::uuid,'/api/v1/images/45450250-3cbd-43fb-b59a-5ee2cc7cd5b2-121593.jpg','121593.jpg','IMAGE_UPLOAD','RAW_UPLOAD',29,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2026-02-21 11:54:51.547198','2026-02-21 11:54:51.547198',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 
-
-commit;
