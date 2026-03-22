@@ -41,7 +41,7 @@ herbarium_project/logs/
 # ---------------------------
 # Secrets / local config
 # ---------------------------
-herbarium_project/.env
+# herbarium_project/.env
 
 # ---------------------------
 # Docker / local persistence
@@ -53,3 +53,4 @@ herbarium_project/volumes/
 # ---------------------------
 herbarium_project/images_data/icons/
 herbarium_project/images_data/original/
+herbarium_project/images_data/labels/

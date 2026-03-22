@@ -111,12 +111,16 @@ CREATE TABLE IF NOT EXISTS ci_specimen_dtl (
     seq_num INTEGER NOT NULL,
     source_task_id UUID NOT NULL,
     icon_image TEXT NOT NULL,
+    lablel_image TEXT,
     taxonomy_metadata JSONB NOT NULL,
     created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (specimen_id, seq_num),
     UNIQUE (specimen_id, source_task_id)
 );
+
+ALTER TABLE ci_specimen_dtl
+    ADD COLUMN IF NOT EXISTS lablel_image TEXT;
 
 CREATE INDEX IF NOT EXISTS ci_specimen_dtl_source_task_id_idx ON ci_specimen_dtl (source_task_id);
 CREATE INDEX IF NOT EXISTS ci_specimen_dtl_specimen_seq_idx ON ci_specimen_dtl (specimen_id, seq_num DESC);
