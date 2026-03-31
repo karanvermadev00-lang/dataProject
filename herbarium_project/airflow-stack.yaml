@@ -1,14 +1,12 @@
 services:
   airflow-init:
-    image: apache/airflow:2.9.3
+    build: .
     restart: "no"
     depends_on:
       postgres-db:
         condition: service_healthy
     environment:
       # Ensure extra python dependencies are available in the image at runtime.
-      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
-
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: ${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
@@ -20,6 +18,12 @@ services:
       # Image/icon processing tuning (used by image_utils + DAG)
       HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
       HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+      HERBARIUM_IMAGES_ORIGINAL_DIR: ${HERBARIUM_IMAGES_ORIGINAL_DIR}
+      HERBARIUM_IMAGES_ICON_DIR: ${HERBARIUM_IMAGES_ICON_DIR}
+      HERBARIUM_IMAGES_LABEL_DIR: ${HERBARIUM_IMAGES_LABEL_DIR}
+      HERBARIUM_LABEL_BBOX_NORM: ${HERBARIUM_LABEL_BBOX_NORM:-}
+      HERBARIUM_LABEL_BBOX_MAP_JSON: ${HERBARIUM_LABEL_BBOX_MAP_JSON:-}
+      HERBARIUM_LABEL_CROP_MODE: ${HERBARIUM_LABEL_CROP_MODE:-}
 
     volumes:
       - ./dags:/dags
@@ -28,23 +32,21 @@ services:
       - ./images_data:/images_data
     networks:
       - herbarium_net
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - |
-        set -euo pipefail
-        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
-        airflow db migrate
-        airflow users create \
-          --username "${AIRFLOW_USERNAME}" \
-          --password "${AIRFLOW_PASSWORD}" \
-          --firstname "${AIRFLOW_FIRSTNAME}" \
-          --lastname "${AIRFLOW_LASTNAME}" \
-          --role "Admin" \
-          --email "${AIRFLOW_EMAIL}" \
-          || true
-
+    command: >
+      bash -c "
+      set -e;
+      airflow db migrate;
+      airflow users create \
+      --username admin \
+      --password admin_pass \
+      --firstname Airflow \
+      --lastname Admin \
+      --role Admin \
+      --email admin@example.com || true;
+      "
   airflow-webserver:
-    image: apache/airflow:2.9.3
+    command: webserver
+    build: .
     depends_on:
       postgres-db:
         condition: service_healthy
@@ -53,7 +55,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
+    
 
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
@@ -73,8 +75,12 @@ services:
       # Used by the DAG to resolve where original images/icons live.
       HERBARIUM_IMAGES_ORIGINAL_DIR: ${HERBARIUM_IMAGES_ORIGINAL_DIR}
       HERBARIUM_IMAGES_ICON_DIR: ${HERBARIUM_IMAGES_ICON_DIR}
+      HERBARIUM_IMAGES_LABEL_DIR: ${HERBARIUM_IMAGES_LABEL_DIR}
       HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
       HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+      HERBARIUM_LABEL_BBOX_NORM: ${HERBARIUM_LABEL_BBOX_NORM:-}
+      HERBARIUM_LABEL_BBOX_MAP_JSON: ${HERBARIUM_LABEL_BBOX_MAP_JSON:-}
+      HERBARIUM_LABEL_CROP_MODE: ${HERBARIUM_LABEL_CROP_MODE:-}
     volumes:
       - ./dags:/dags
       - ./plugins:/plugins
@@ -82,22 +88,17 @@ services:
       - ./images_data:/images_data
     networks:
       - herbarium_net
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - |
-        set -euo pipefail
-        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
-        exec airflow webserver
+
 
   airflow-scheduler:
-    image: apache/airflow:2.9.3
+    command: scheduler
+    build: .
     depends_on:
       postgres-db:
         condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
     environment:
-      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
 
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
@@ -115,8 +116,12 @@ services:
 
       HERBARIUM_IMAGES_ORIGINAL_DIR: ${HERBARIUM_IMAGES_ORIGINAL_DIR}
       HERBARIUM_IMAGES_ICON_DIR: ${HERBARIUM_IMAGES_ICON_DIR}
+      HERBARIUM_IMAGES_LABEL_DIR: ${HERBARIUM_IMAGES_LABEL_DIR}
       HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
       HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+      HERBARIUM_LABEL_BBOX_NORM: ${HERBARIUM_LABEL_BBOX_NORM:-}
+      HERBARIUM_LABEL_BBOX_MAP_JSON: ${HERBARIUM_LABEL_BBOX_MAP_JSON:-}
+      HERBARIUM_LABEL_CROP_MODE: ${HERBARIUM_LABEL_CROP_MODE:-}
     volumes:
       - ./dags:/dags
       - ./plugins:/plugins
@@ -124,22 +129,16 @@ services:
       - ./images_data:/images_data
     networks:
       - herbarium_net
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - |
-        set -euo pipefail
-        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
-        exec airflow scheduler
 
   airflow-triggerer:
-    image: apache/airflow:2.9.3
+    command: triggerer
+    build: .
     depends_on:
       postgres-db:
         condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
     environment:
-      _PIP_ADDITIONAL_DEPENDENCIES: "pillow pandas psycopg2-binary"
 
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
@@ -157,8 +156,12 @@ services:
 
       HERBARIUM_IMAGES_ORIGINAL_DIR: ${HERBARIUM_IMAGES_ORIGINAL_DIR}
       HERBARIUM_IMAGES_ICON_DIR: ${HERBARIUM_IMAGES_ICON_DIR}
+      HERBARIUM_IMAGES_LABEL_DIR: ${HERBARIUM_IMAGES_LABEL_DIR}
       HERBARIUM_IMAGE_WORKERS: ${HERBARIUM_IMAGE_WORKERS}
       HERBARIUM_MAX_SOURCE_PIXELS: ${HERBARIUM_MAX_SOURCE_PIXELS}
+      HERBARIUM_LABEL_BBOX_NORM: ${HERBARIUM_LABEL_BBOX_NORM:-}
+      HERBARIUM_LABEL_BBOX_MAP_JSON: ${HERBARIUM_LABEL_BBOX_MAP_JSON:-}
+      HERBARIUM_LABEL_CROP_MODE: ${HERBARIUM_LABEL_CROP_MODE:-}
     volumes:
       - ./dags:/dags
       - ./plugins:/plugins
@@ -166,12 +169,6 @@ services:
       - ./images_data:/images_data
     networks:
       - herbarium_net
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - |
-        set -euo pipefail
-        pip install --quiet --no-cache-dir $${_PIP_ADDITIONAL_DEPENDENCIES}
-        exec airflow triggerer
 
 networks:
   herbarium_net:

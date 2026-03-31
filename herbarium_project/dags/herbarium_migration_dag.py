@@ -16,14 +16,34 @@ from mappings import (
     parse_json_text,
 )
 
-try:
+
     # Airflow adds the plugins folder to sys.path in the container.
-    from image_utils import create_optimized_icon, resolve_icon_output_path
-except ImportError:  # pragma: no cover
-    from plugins.image_utils import create_optimized_icon, resolve_icon_output_path
+from image_utils import (
+        create_label_image,
+        create_optimized_icon,
+        resolve_icon_output_path,
+        resolve_label_output_path,
+)
+
 
 
 POSTGRES_CONN_ID = "postgres_default"
+DEFAULT_PARENT_SOURCE_STATUSES = "COMPLETED,MIGRATED,DLQ_IMAGE_CORRUPTED"
+
+
+def _parse_csv_env(name: str, default_value: str) -> List[str]:
+    raw = os.getenv(name)
+    if raw is None or not raw.strip():
+        raw = default_value
+    return [s.strip() for s in raw.split(",") if s.strip()]
+
+
+def _get_parent_statuses() -> List[str]:
+    return _parse_csv_env("HERBARIUM_PARENT_SOURCE_STATUSES", DEFAULT_PARENT_SOURCE_STATUSES)
+
+
+def _get_task_statuses() -> List[str]:
+    return _parse_csv_env("HERBARIUM_TASK_SOURCE_STATUSES", ",".join(_get_parent_statuses()))
 
 
 def _resolve_original_image_path(original_dir: str, image_url: Optional[str], filename: Optional[str]) -> str:
@@ -127,11 +147,7 @@ def _iter_completed_batches_offset(hook: PostgresHook, batch_size: int) -> Any:
     Task A only depends on `herbarium_tasks.status` (not on dtl existence), so OFFSET is stable.
     """
     conn = hook.get_conn()
-    parent_statuses = os.getenv(
-        "HERBARIUM_PARENT_SOURCE_STATUSES",
-        "COMPLETED,MIGRATED,DLQ_IMAGE_CORRUPTED",
-    )
-    statuses = [s.strip() for s in parent_statuses.split(",") if s.strip()]
+    statuses = _get_parent_statuses()
     offset = 0
 
     while True:
@@ -325,19 +341,12 @@ def image_processing_task(**context) -> None:
     processed = 0
     corrupted = 0
 
-    task_source_statuses = os.getenv(
-        "HERBARIUM_TASK_SOURCE_STATUSES",
-        os.getenv(
-            "HERBARIUM_PARENT_SOURCE_STATUSES",
-            "COMPLETED,MIGRATED,DLQ_IMAGE_CORRUPTED",
-        ),
-    )
-    statuses = [s.strip() for s in task_source_statuses.split(",") if s.strip()]
+    statuses = _get_task_statuses()
 
     for batch in _iter_completed_batches(
         hook,
         batch_size=batch_size,
-        only_missing_in_dtl=True,
+        only_missing_in_dtl=False,
         statuses=statuses,
     ):
         # Thread-safe: create atomic icon files (handled in image_utils) and never share PIL objects.
@@ -394,6 +403,94 @@ def image_processing_task(**context) -> None:
     print(f"[image_processing_task] processed {processed} tasks; corrupted={corrupted}")
 
 
+def label_segmentation_task(**context) -> None:
+    """
+    Task B2:
+    Concurrent label-image segmentation from herbarium originals.
+    """
+    hook = PostgresHook(postgres_conn_id=POSTGRES_CONN_ID)
+
+    batch_size = int(os.getenv("HERBARIUM_BATCH_SIZE", "1000"))
+    workers = int(os.getenv("HERBARIUM_IMAGE_WORKERS", "8"))
+
+    original_dir = os.getenv("HERBARIUM_IMAGES_ORIGINAL_DIR")
+    label_dir = os.getenv("HERBARIUM_IMAGES_LABEL_DIR")
+    if not original_dir or not label_dir:  # pragma: no cover
+        raise RuntimeError("Missing HERBARIUM_IMAGES_ORIGINAL_DIR / HERBARIUM_IMAGES_LABEL_DIR env vars")
+    os.makedirs(label_dir, exist_ok=True)
+
+    conn = hook.get_conn()
+    from psycopg2.extras import execute_values
+
+    dlq_insert_sql = """
+        INSERT INTO ci_specimen_image_dlq (source_task_id, specimen_id, error_text)
+        VALUES %s
+        ON CONFLICT (source_task_id) DO UPDATE
+        SET specimen_id = EXCLUDED.specimen_id,
+            error_text = EXCLUDED.error_text,
+            created_at = NOW()
+    """
+
+    processed = 0
+    corrupted = 0
+
+    statuses = _get_task_statuses()
+
+    for batch in _iter_completed_batches(
+        hook,
+        batch_size=batch_size,
+        only_missing_in_dtl=False,
+        statuses=statuses,
+    ):
+        failures: List[Tuple[uuid.UUID, uuid.UUID, str]] = []
+        success_tasks: List[uuid.UUID] = []
+
+        def worker(task: Dict[str, Any]) -> Tuple[uuid.UUID, Optional[str], Optional[uuid.UUID]]:
+            t_id = task["id"]
+            try:
+                filename = task.get("filename")
+                image_url = task.get("image_url")
+                label_output_path = resolve_label_output_path(label_dir, filename or str(t_id))
+                if os.path.exists(label_output_path):
+                    return t_id, None, None
+
+                original_path = _resolve_original_image_path(original_dir, image_url, filename)
+                create_label_image(original_path, label_output_path)
+                return t_id, None, None
+            except Exception as e:  # pragma: no cover
+                specimen_id = compute_specimen_id(task.get("barcode"), t_id)
+                return t_id, f"[label-segmentation] {e}", specimen_id
+
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            future_map = {pool.submit(worker, task): task for task in batch}
+            for fut in as_completed(future_map):
+                t_id, err_text, specimen_id = fut.result()
+                if err_text:
+                    failures.append((t_id, specimen_id, err_text))
+                else:
+                    success_tasks.append(t_id)
+
+        processed += len(batch)
+        if failures:
+            corrupted += len(failures)
+            with conn.cursor() as cur:
+                execute_values(cur, dlq_insert_sql, failures, template="(%s,%s,%s)")
+            conn.commit()
+
+        if success_tasks:
+            with conn.cursor() as cur:
+                cur.execute(
+                    """
+                    DELETE FROM ci_specimen_image_dlq
+                    WHERE source_task_id = ANY(%s::uuid[])
+                    """,
+                    ([str(t_id) for t_id in success_tasks],),
+                )
+            conn.commit()
+
+    print(f"[label_segmentation_task] processed {processed} tasks; corrupted={corrupted}")
+
+
 def detail_and_sync_task(**context) -> None:
     """
     Task C:
@@ -405,20 +502,29 @@ def detail_and_sync_task(**context) -> None:
     batch_size = int(os.getenv("HERBARIUM_BATCH_SIZE", "1000"))
     original_dir = os.getenv("HERBARIUM_IMAGES_ORIGINAL_DIR")
     icon_dir = os.getenv("HERBARIUM_IMAGES_ICON_DIR")
-    if not original_dir or not icon_dir:  # pragma: no cover
-        raise RuntimeError("Missing HERBARIUM_IMAGES_ORIGINAL_DIR / HERBARIUM_IMAGES_ICON_DIR env vars")
+    label_dir = os.getenv("HERBARIUM_IMAGES_LABEL_DIR")
+    if not original_dir or not icon_dir or not label_dir:  # pragma: no cover
+        raise RuntimeError(
+            "Missing HERBARIUM_IMAGES_ORIGINAL_DIR / HERBARIUM_IMAGES_ICON_DIR / HERBARIUM_IMAGES_LABEL_DIR env vars"
+        )
     os.makedirs(icon_dir, exist_ok=True)
+    os.makedirs(label_dir, exist_ok=True)
 
     conn = hook.get_conn()
 
     from psycopg2.extras import execute_values
 
     insert_dtl_sql = """
-        INSERT INTO ci_specimen_dtl (specimen_id, seq_num, source_task_id, icon_image, taxonomy_metadata)
+        INSERT INTO ci_specimen_dtl (specimen_id, seq_num, source_task_id, icon_image, lablel_image, taxonomy_metadata)
         VALUES %s
-        ON CONFLICT (specimen_id, source_task_id) DO NOTHING
+        ON CONFLICT (specimen_id, source_task_id) DO UPDATE
+        SET
+            icon_image = EXCLUDED.icon_image,
+            lablel_image = EXCLUDED.lablel_image,
+            taxonomy_metadata = EXCLUDED.taxonomy_metadata,
+            updated_at = NOW()
     """
-    insert_dtl_template = "(%s,%s,%s,%s,%s::jsonb)"
+    insert_dtl_template = "(%s,%s,%s,%s,%s,%s::jsonb)"
 
     sync_parent_sql = """
         WITH latest AS (
@@ -456,19 +562,12 @@ def detail_and_sync_task(**context) -> None:
     processed_tasks = 0
     migrated_tasks = 0
 
-    task_source_statuses = os.getenv(
-        "HERBARIUM_TASK_SOURCE_STATUSES",
-        os.getenv(
-            "HERBARIUM_PARENT_SOURCE_STATUSES",
-            "COMPLETED,MIGRATED,DLQ_IMAGE_CORRUPTED",
-        ),
-    )
-    statuses = [s.strip() for s in task_source_statuses.split(",") if s.strip()]
+    statuses = _get_task_statuses()
 
     for batch in _iter_completed_batches(
         hook,
         batch_size=batch_size,
-        only_missing_in_dtl=True,
+        only_missing_in_dtl=False,
         statuses=statuses,
     ):
         specimen_ids_in_batch: List[uuid.UUID] = [
@@ -517,6 +616,16 @@ def detail_and_sync_task(**context) -> None:
 
             icon_rel_path = os.path.join("icons", os.path.basename(icon_output_path))
 
+            label_output_path = resolve_label_output_path(label_dir, filename or str(t_id))
+            if not os.path.exists(label_output_path):
+                try:
+                    original_path = _resolve_original_image_path(original_dir, image_url, filename)
+                    create_label_image(original_path, label_output_path)
+                except Exception as e:  # pragma: no cover
+                    dlq_values.append((t_id, specimen_id, f"[label-segmentation] {e}"))
+                    continue
+            label_rel_path = os.path.join("labels", os.path.basename(label_output_path))
+
             taxonomy_json = parse_json_text(task.get("taxonomy_data"))
             taxonomy_metadata = build_taxonomy_metadata(task, taxonomy_json)
 
@@ -529,6 +638,7 @@ def detail_and_sync_task(**context) -> None:
                     seq_num,
                     t_id,
                     icon_rel_path,
+                    label_rel_path,
                     json.dumps(taxonomy_metadata, default=str),
                 )
             )
@@ -582,10 +692,14 @@ with DAG(
         task_id="image_processing_icon",
         python_callable=image_processing_task,
     )
+    process_labels = PythonOperator(
+        task_id="label_segmentation_image",
+        python_callable=label_segmentation_task,
+    )
     detail_and_sync = PythonOperator(
         task_id="detail_and_sync",
         python_callable=detail_and_sync_task,
     )
 
-    migrate_parent >> process_icons >> detail_and_sync
+    migrate_parent >> [process_icons, process_labels] >> detail_and_sync
 
